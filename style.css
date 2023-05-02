@@ -273,7 +273,48 @@ nav a:hover {
 .dojazd-time{
     font-weight: bold;
 }
-/* KONTAKT */
+
+/* KONTAKT STRONA */
+.main-kontakt{
+    width: 100%;
+    height: 100%;
+    background-color: #b7d7e8;
+    color: #ffffff;
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Open Sans', sans-serif;
+}
+.kontakt-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.kontakt-container{
+    width: 40%;
+    height: 100%;
+    padding: 0%;
+    margin: 0%;
+    font-size: 120%;
+    text-align: right;
+}
+.kontakt-paint{
+    width: 40%;
+    height: 100%;
+    padding: 0%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+.kontakt-paint img{
+    width: auto;
+    height: auto;
+    padding: 0%;
+    margin: 0%;
+}
+
+/* KONTAKT STOPKA */
 footer {
     width: 100%;
     font-family: 'Open Sans', sans-serif;
@@ -295,7 +336,7 @@ footer {
 }
 
 
-/* Responsywność main-content */
+/* Responsywność strona-glowna */
 @media (max-width: 1120px){
     .main-content{
         display: block;
@@ -327,6 +368,41 @@ footer {
         margin-right: auto;
     }
 
+}
+/* Responsywność dojazd */
+@media (max-width: 1037px){
+    .map-div{
+        display: block;
+    }
+    iframe{
+        width: 100%;
+    }
+    .dojazd-info{
+        width: auto;
+        text-align: center;
+    }
+}
+
+/* Responsywność kontakt */
+@media (max-width: 1300px){
+    .kontakt-flex{
+        display: block;
+    }
+    .kontakt-container{
+        width: auto;
+        text-align: center;
+        padding-bottom: 2%;
+    }
+    .kontakt-paint{
+        width: 100%;
+        padding-top: 80px;
+        margin-bottom: 0%;
+        display: flex;
+        justify-content: center;
+    }
+    .kontakt-paint img{
+        width: 50%;
+    }
 }
 
 /* Responsywność nav baru */
