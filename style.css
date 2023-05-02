@@ -84,7 +84,6 @@ nav a:hover {
 
 .dropdown {
     display: none;
-    margin: none;
     cursor: pointer;
     text-align: center;
 }
@@ -314,6 +313,97 @@ nav a:hover {
     margin: 0%;
 }
 
+/* MENU STRONA */
+.main-menu{
+    width: 100%;
+    height: 100%;
+    background-color: #b7d7e8;
+    color: #ffffff;
+    padding: 0%;
+    margin: 0%;
+    font-size: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+.main-menu h1{
+    margin-top: 122px;
+    padding-top: 2%;
+    font-weight: bold;
+    font-size: 300%;
+    text-align: center;
+}
+.main-menu hr{
+    border: 10px solid #87bdd8;
+    border-radius: 5px;
+}
+.appetizers{
+    width: 100%;
+    height: auto;
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.appetizers img{
+    width: 30%;
+    height: auto;
+    padding: 0%;
+    margin: 0%;
+}
+.appetizers-grid{
+    width: 30%;
+    height: auto;
+    padding: 0%;
+    margin-left: 2%;
+}
+.main-course{
+    width: 100%;
+    height: auto;
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.main-course img{
+    width: 30%;
+    height: auto;
+    padding: 0%;
+    margin: 0%;
+}
+.main-course-grid{
+    width: 30%;
+    height: auto;
+    padding: 0%;
+    margin-left: 2%;
+}
+.drinks{
+    width: 100%;
+    height: auto;
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.drinks img{
+    width: 30%;
+    height: auto;
+    padding: 0%;
+    margin: 0%;
+}
+.drinks-grid{
+    width: 30%;
+    height: auto;
+    padding: 0%;
+    margin-left: 2%;
+}
 /* KONTAKT STOPKA */
 footer {
     width: 100%;
@@ -404,6 +494,29 @@ footer {
         width: 50%;
     }
 }
+
+/* Responsywność menu */
+@media (max-width: 1400px){
+    .appetizers, .main-course, .drinks{
+        display: block;
+
+    }
+    .appetizers-grid, .main-course-grid, .drinks-grid{
+        width: auto;
+        text-align: center;
+        padding-bottom: 2%;
+    }
+    .appetizers img, .main-course img, .drinks img{
+        width: 50%;
+        display: block;
+        width: 50%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
 
 /* Responsywność nav baru */
 @media (max-width: 900px) {
